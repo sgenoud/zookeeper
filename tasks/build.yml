@@ -5,7 +5,7 @@
   apt:
     name: "{{ item }}"
   with_items:
-    - openjdk-7-jre-headless
+    - "openjdk-{{ java_version }}-jre-headless"
 
 - name: Create Zookeeper directories
   become: yes
